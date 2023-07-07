@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                    background-color: rgb(180, 244, 243);
+                  }
+          </style>
+        <title>CricMate</title>
+    </head>
+    <body>
+        <header>
+            <h2>HAND CRICKET</h2>
+            <ul>
+                <a href = "{{url_for('home')}}"><li>BACK</li></a>
+                <a href = "{{url_for('profile')}}"><li>PATIENT PROFILE</li></a>
+             
+            </ul>
+        </header>
+        <center>
+        <main>
+            
+            <br><br><br><br><br><br><br>
+     
+            <br><br><br><br>
+            <a href ="{{ url_for('skin') }}" class="button-85" role="button"><b>SKIN CANCER PREDICTION</b></a>
+            
+        </main>           
+        </center>
+    </body>

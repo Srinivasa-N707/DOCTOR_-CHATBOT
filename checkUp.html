@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                    background-color: rgb(180, 244, 243);
+                  }
+          </style>
+        <title>CricMate</title>
+    </head>
+    <body>
+        <header>
+            <h2>HAND CRICKET</h2>
+            <ul>
+                <a href = "{{url_for('home')}}"><li>BACK</li></a>
+                <a href = "{{url_for('profile')}}"><li>PATIENT PROFILE</li></a>
+             
+            </ul>
+        </header>
+        <center>
+        <main>
+            
+            <br><br><br><br><br><br><br>
+     
+            <form method="POST" action="{{ url_for('predict_common')}}">
+            <input type = "text" id = 'disease' name = 'disease'>
+            <button type = "Let's predict"></button>
+           </form>
+
+           <h1>{{message}}</h1>
+           <p>{{description}}</p>
+            
+        </main>           
+        </center>
+    </body><!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                    background-color: rgb(180, 244, 243);
+                  }
+          </style>
+        <title>CricMate</title>
+    </head>
+    <body>
+        <header>
+            <h2>HAND CRICKET</h2>
+            <ul>
+                <a href = "{{url_for('home')}}"><li>BACK</li></a>
+                <a href = "{{url_for('profile')}}"><li>PATIENT PROFILE</li></a>
+             
+            </ul>
+        </header>
+        <center>
+        <main>
+            
+            <br><br><br><br><br><br><br>
+     
+            <br><br><br><br>
+            <a href ="{{ url_for('skin') }}" class="button-85" role="button"><b>SKIN CANCER PREDICTION</b></a>
+            
+        </main>           
+        </center>
+    </body>
